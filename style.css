@@ -1,0 +1,59 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden
+}
+h1{
+  text-align: center;
+  font-family: arial;
+  
+}
+#card-container {
+  width: 400px;
+  height: 420px;
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+img {
+  height: 270px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.card {
+  height: 300px;
+  width: 270px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card1{
+  z-index: 4;
+}
+#card2{
+  z-index: 3;
+}
+#card3{
+  z-index: 2;
+}
+#card-container:hover #card1 {
+  transform: translateX(-2rem) rotate(-30deg);
+  transition: transform 0.7s;
+  transform-origin: bottom right;
+}
+#card-container:hover #card2 {
+  transform: translateY(3.5rem);
+  transition: transform 0.7s;
+}
+#card-container:hover #card3 {
+  transform: translateX(2rem) rotate(30deg);
+  transition: transform 0.7s;
+  transform-origin: bottom left;
+}
