@@ -19,6 +19,8 @@ h1{
   border: 1px solid black;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+ 
 }
 img {
   height: 270px;
@@ -28,11 +30,13 @@ img {
 }
 .card {
   height: 300px;
-  width: 270px;
+  width: 230px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: lightgrey;
+  border-radius: 10px;
 }
 #card1{
   z-index: 4;
